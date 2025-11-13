@@ -1,0 +1,613 @@
+    1  2025-11-10T15:32:44 int-
+    2  2025-11-10T15:33:03 int-1
+    3  2025-11-10T15:34:17 module avail git
+    4  2025-11-10T15:38:57 hostname
+    5  2025-11-10T15:39:05 ssh int2
+    6  2025-11-10T15:39:11 ssh int-2
+    7  2025-11-10T15:39:20 hostname
+    8  2025-11-10T15:39:33 shh int-2
+    9  2025-11-10T15:39:42 ssh int-2
+   10  2025-11-10T15:41:51 module avail git
+   11  2025-11-10T15:42:57 module load git/2.49.0-GCCcore-14.2.0
+   12  2025-11-10T15:43:39 gitt --git/2.49.0-GCCcore-14.2.0
+   13  2025-11-10T15:43:57 Module load --help
+   14  2025-11-10T15:44:13 git --version
+   15  2025-11-10T15:44:41 module load -n
+   16  2025-11-10T15:45:30 git config --global user.name "Gabija Rozenaite"
+   17  2025-11-10T15:46:16 git config --global user.email "gabijar@uio.no"
+   18  2025-11-10T15:47:07 git config --global core.editor "nano -w"
+   19  2025-11-10T15:47:51 git config --global init.defaultBranch main
+   20  2025-11-10T15:48:05 git config --global pull.rebase false
+   21  2025-11-10T15:48:22 git config --list
+   22  2025-11-10T15:53:24 ls -a ~/.ssh
+   23  2025-11-10T15:54:34 ssh-keygen -t ed25519 -C "gabijar@uio.no"
+   24  2025-11-10T15:56:46 ls -a ~/.ssh
+   25  2025-11-10T15:57:23 shh -T git@github.com
+   26  2025-11-10T15:57:49 shh -T gabijar@uio.no
+   27  2025-11-10T15:57:59 ssh -T git@github.com
+   28  2025-11-10T15:58:57 cat ~/.ssh/id_ed25519.pub
+   29  2025-11-10T16:01:41 ssh -T git@github.com
+   30  2025-11-11T11:54:04 shh-2
+   31  2025-11-11T11:54:14 shh int-2
+   32  2025-11-11T11:56:53 ssh int-2
+   33  2025-11-11T11:58:55 git --version
+   34  2025-11-11T11:59:42 ls
+   35  2025-11-11T11:59:47 pwd
+   36  2025-11-11T12:07:17 mkdir fasta
+   37  2025-11-11T12:07:18 ls
+   38  2025-11-11T12:07:22 cd fasta/
+   39  2025-11-11T12:07:24 ls
+   40  2025-11-11T12:07:27 pwd
+   41  2025-11-11T12:12:52 ls
+   42  2025-11-11T12:15:36 scp ec-gabijar@fox.educloud.no://fp/homes01/u01/ec-gabijar/fasta/*.fasta
+   43  2025-11-11T12:19:38 ls
+   44  2025-11-11T12:20:04 unzip shell-novice-data.zip 
+   45  2025-11-11T12:20:09 ls
+   46  2025-11-11T12:20:20 cd data-shell/
+   47  2025-11-11T12:20:36 wc -l *.pdb
+   48  2025-11-11T12:20:44 wc -1 *.pdb
+   49  2025-11-11T12:20:46 ls
+   50  2025-11-11T12:21:27 cd molecules/
+   51  2025-11-11T12:21:29 ls
+   52  2025-11-11T12:21:35 wc -l *.pdb
+   53  2025-11-11T12:21:45 wc -l *.pdb > lenghts
+   54  2025-11-11T12:22:07 wc -l *.pdb | sort -n | head -1
+   55  2025-11-11T12:22:24 pwd
+   56  2025-11-11T12:22:33 ls
+   57  2025-11-11T12:24:20 ls *.pdb
+   58  2025-11-11T12:24:59 ls *ethane.pdb
+   59  2025-11-11T12:25:12 ls
+   60  2025-11-11T12:25:18 cd ../
+   61  2025-11-11T12:25:20 ls
+   62  2025-11-11T12:25:28 cd data 
+   63  2025-11-11T12:25:31 cd data/
+   64  2025-11-11T12:25:37 ls
+   65  2025-11-11T12:25:42 pwd
+   66  2025-11-11T12:26:00 cat animals.txt 
+   67  2025-11-11T12:26:20 head -3 animals.txt > animalsUpd.txt
+   68  2025-11-11T12:26:31 cat animalsUpd.txt 
+   69  2025-11-11T12:26:50 tail -2 animals.txt >> animalsUpd.txt
+   70  2025-11-11T12:26:56 cat animalsUpd.txt 
+   71  2025-11-11T12:27:55 cat animals.txt | head -n 5 | tail -n 3 | sort -r > final.txt
+   72  2025-11-11T12:27:58 ls
+   73  2025-11-11T12:28:02 cat final.txt 
+   74  2025-11-11T12:28:13 sort --help
+   75  2025-11-11T12:31:22 ls
+   76  2025-11-11T12:31:35 cat salmon.txt 
+   77  2025-11-11T12:31:41 uniq salmon.txt 
+   78  2025-11-11T12:32:17 sort salmon.txt | uniq 
+   79  2025-11-11T12:32:33 sort salmon.txt | uniq | wc -;
+   80  2025-11-11T12:32:36 sort salmon.txt | uniq | wc -l
+   81  2025-11-11T12:32:40 sort salmon.txt | uniq | wc 
+   82  2025-11-11T12:32:46 sort salmon.txt | uniq | wc -l
+   83  2025-11-11T12:33:26 pwd
+   84  2025-11-11T12:35:06 wc -l *.txt > sort -n > head -n 3
+   85  2025-11-11T12:35:25 wc -l *.txt | sort -n | head -n 1-3
+   86  2025-11-11T12:35:46 wc -l *.txt | head -n 3 | sort -n
+   87  2025-11-11T12:36:05 wc -l *.txt | sort -n | head -n 3
+   88  2025-11-11T12:36:15 wc -l *.txt | sort -n | wc -l *.txt | sort -n
+   89  2025-11-11T12:36:35 wc -l *.txt | sort -n 
+   90  2025-11-11T12:36:49 ls
+   91  2025-11-11T13:16:59 ssh int-2
+   92  2025-11-11T13:17:12 module load git/2.49.0-GCCcore-14.2.0
+   93  2025-11-11T13:17:20 git --version
+   94  2025-11-11T13:17:55 ls
+   95  2025-11-11T13:18:07 cd BIOS-IN5410/
+   96  2025-11-11T13:18:08 LS
+   97  2025-11-11T13:18:10 ls
+   98  2025-11-11T13:30:51 pwd
+   99  2025-11-11T13:36:32 mkdir recipes
+  100  2025-11-11T13:36:44 ls -a
+  101  2025-11-11T13:36:52 cd recipes/
+  102  2025-11-11T13:36:58 git init
+  103  2025-11-11T13:37:02 ls -a 
+  104  2025-11-11T13:37:16 ls
+  105  2025-11-11T13:37:55 git status
+  106  2025-11-11T13:38:56 pwd
+  107  2025-11-11T13:39:04 mkdir desserts
+  108  2025-11-11T13:39:08 cd desserts/
+  109  2025-11-11T13:39:14 git init
+  110  2025-11-11T13:39:18 ls -a 
+  111  2025-11-11T13:39:47 git status
+  112  2025-11-11T13:40:53 pwd
+  113  2025-11-11T13:41:08 rm -rf desserts/.git
+  114  2025-11-11T13:41:10 ls
+  115  2025-11-11T13:41:12 pwd
+  116  2025-11-11T13:41:19 cd ../
+  117  2025-11-11T13:41:21 pwd
+  118  2025-11-11T13:41:29 rm -rf desserts/.git
+  119  2025-11-11T13:41:32 ls
+  120  2025-11-11T13:41:38 cd desserts/
+  121  2025-11-11T13:41:42 ls -a
+  122  2025-11-11T13:42:06 cd ../
+  123  2025-11-11T13:42:08 ls
+  124  2025-11-11T13:42:19 rm desserts
+  125  2025-11-11T13:42:28 rm -rf desserts
+  126  2025-11-11T13:42:30 ls
+  127  2025-11-11T13:42:33 pwd
+  128  2025-11-11T13:42:35 ls -a
+  129  2025-11-11T13:43:10 nano guacamole.md
+  130  2025-11-11T13:44:17 ls
+  131  2025-11-11T13:44:42 cat guacamole.md 
+  132  2025-11-11T13:45:24 git status
+  133  2025-11-11T13:45:48 git add guacamole.md 
+  134  2025-11-11T13:45:54 git status
+  135  2025-11-11T13:47:27 git commit -m "Create initial structure for a Guacamole recipe"
+  136  2025-11-11T13:49:39 git status
+  137  2025-11-11T13:49:50 git log
+  138  2025-11-11T13:51:27 ls
+  139  2025-11-11T13:51:31 ls -a
+  140  2025-11-11T13:51:47 nano guacamole.md 
+  141  2025-11-11T13:52:29 cat guacamole.md 
+  142  2025-11-11T13:52:39 git status
+  143  2025-11-11T13:53:04 git diff
+  144  2025-11-11T13:54:34 git commit -m "Add ingredients for basic guacamole" 
+  145  2025-11-11T13:54:54 git add guacamole.md 
+  146  2025-11-11T13:54:58 git commit -m "Add ingredients for basic guacamole" 
+  147  2025-11-11T13:57:00 nano guacamole.md 
+  148  2025-11-11T13:57:23 cat guacamole.md 
+  149  2025-11-11T13:57:30 git diff
+  150  2025-11-11T13:57:49 git add guacamole.md 
+  151  2025-11-11T13:57:52 git diff
+  152  2025-11-11T13:58:07 git diff --staged
+  153  2025-11-11T13:58:37 git commit -m "Modify guacamole to the traditional recipe" 
+  154  2025-11-11T13:58:44 git status
+  155  2025-11-11T14:00:06 git log
+  156  2025-11-11T14:02:21 git log --oneline
+  157  2025-11-11T14:02:28 git log --oneline --graph
+  158  2025-11-11T14:03:26 mkdir cakes
+  159  2025-11-11T14:03:32 git status
+  160  2025-11-11T14:03:41 git add cakes
+  161  2025-11-11T14:03:44 git staus
+  162  2025-11-11T14:03:49 git status
+  163  2025-11-11T14:04:53 touch cakes/brownie cakes/lemon_drizzle
+  164  2025-11-11T14:04:57 git status
+  165  2025-11-11T14:05:04 git add cakes
+  166  2025-11-11T14:05:07 git status
+  167  2025-11-11T14:05:27 git commit -m "add some initial cakes" 
+  168  2025-11-11T14:05:30 git status
+  169  2025-11-11T14:05:35 git log
+  170  2025-11-11T14:05:41 ls
+  171  2025-11-11T14:05:46 cd cakes/
+  172  2025-11-11T14:05:47 ls
+  173  2025-11-11T14:07:33 cd ../
+  174  2025-11-11T14:07:36 nano guacamole.md 
+  175  2025-11-11T14:08:31 nano groceries.md
+  176  2025-11-11T14:09:24 git add guacamole.md groceries.md
+  177  2025-11-11T14:09:56 git commit -m "Prices of products and groceries"
+  178  2025-11-11T14:10:02 git status
+  179  2025-11-11T14:10:08 git log --oneline
+  180  2025-11-11T14:12:13 nano guacamole.md 
+  181  2025-11-11T14:12:55 cat guacamole.md 
+  182  2025-11-11T14:13:06 git diff HEAD guacamole.md
+  183  2025-11-11T14:13:19 git diff guacamole.md
+  184  2025-11-11T14:13:37 git diff HEAD~1 guacamole.md
+  185  2025-11-11T14:14:01 git diff HEAD~2 guacamole.md
+  186  2025-11-11T14:15:27 git show HEAD~2 guacamole.m
+  187  2025-11-11T14:18:55 git status
+  188  2025-11-11T14:19:12 git restore guacamole.md 
+  189  2025-11-11T14:19:16 cat guacamole.md 
+  190  2025-11-11T14:20:57 git status
+  191  2025-11-11T14:21:23 cat guacamole.md 
+  192  2025-11-11T14:21:48 git restore guacamole.md 
+  193  2025-11-11T14:21:50 cat guacamole.md 
+  194  2025-11-11T14:23:11 git log --oneline
+  195  2025-11-11T14:26:37 git show
+  196  2025-11-11T14:29:34 git log guacamole.md
+  197  2025-11-11T14:29:41 git log --oneline guacamole.md
+  198  2025-11-11T14:30:13 git log --patch guacamole.md
+  199  2025-11-11T14:30:55 git log --patch HEAD~9 *.md
+  200  2025-11-11T14:32:47 pwd
+  201  2025-11-11T14:33:04 cd ../
+  202  2025-11-11T14:33:07 ls
+  203  2025-11-11T14:33:22 cd recipes/
+  204  2025-11-11T14:33:24 ls
+  205  2025-11-11T14:33:40 mkdir pictures
+  206  2025-11-11T14:33:43 git status
+  207  2025-11-11T14:33:45 ls
+  208  2025-11-11T14:33:51 cd pictures
+  209  2025-11-11T14:33:56 git status
+  210  2025-11-11T14:33:58 ls -a
+  211  2025-11-11T14:34:06 git init
+  212  2025-11-11T14:34:09 ls -a
+  213  2025-11-11T14:34:41 cd ../
+  214  2025-11-11T14:34:43 ls
+  215  2025-11-11T14:35:31 touch a.png b.png c.png pictures/cake1.jpg pictures/cake2.jpg
+  216  2025-11-11T14:35:39 git status
+  217  2025-11-11T14:36:36 nano .gitignore
+  218  2025-11-11T14:37:02 cat .gitignore
+  219  2025-11-11T14:37:20 git status
+  220  2025-11-11T14:37:43 git add .gitignore
+  221  2025-11-11T14:38:02 git commit -m "Ignore png files and the pictures folder"
+  222  2025-11-11T14:38:09 git status
+  223  2025-11-11T14:40:11 ls
+  224  2025-11-11T14:40:22 cd pictures/
+  225  2025-11-11T14:40:23 ls
+  226  2025-11-11T14:40:29 cd ../
+  227  2025-11-11T14:40:32 pwd
+  228  2025-11-11T14:40:33 ls
+  229  2025-11-11T14:41:27 git add a.png
+  230  2025-11-11T14:41:52 git status --ignored
+  231  2025-11-11T13:12:21 ssh int-2
+  232  2025-11-11T13:12:35 module load git/2.49.0-GCCcore-14.2.0
+  233  2025-11-11T13:12:50 git --version
+  234  2025-11-11T13:13:09 pwd
+  235  2025-11-11T13:13:34 mkdir BIOS-IN5410
+  236  2025-11-11T13:13:37 ls
+  237  2025-11-11T13:13:44 cd fasta/
+  238  2025-11-11T13:13:45 ls
+  239  2025-11-11T13:13:54 cd ../
+  240  2025-11-13T09:52:37 ssh int-4
+  241  2025-11-13T09:53:21 pwd
+  242  2025-11-13T09:53:25 ls
+  243  2025-11-13T09:53:38 cd BIOS-IN5410/
+  244  2025-11-13T09:54:25 pwd
+  245  2025-11-13T09:54:45 mkdir sbatch_intro
+  246  2025-11-13T09:54:46 ls
+  247  2025-11-13T09:54:52 cd sbatch_intro/
+  248  2025-11-13T09:54:55 pwd
+  249  2025-11-13T09:56:38 ĉd ../
+  250  2025-11-13T09:56:45 cd ../
+  251  2025-11-13T09:57:10 pwd
+  252  2025-11-13T09:57:11 ls
+  253  2025-11-13T09:57:46 cd projects/ec34/biosin5410/sbatch_intro/
+  254  2025-11-13T09:57:48 ls
+  255  2025-11-13T09:58:21 cd ../
+  256  2025-11-13T09:58:30 ¨cd home/
+  257  2025-11-13T09:58:42 cd home/
+  258  2025-11-13T09:58:44 ls
+  259  2025-11-13T09:59:22 cd slurm/
+  260  2025-11-13T09:59:30 cd munge/
+  261  2025-11-13T10:00:12 cd fp
+  262  2025-11-13T10:00:17 cd ../
+  263  2025-11-13T10:00:19 ls
+  264  2025-11-13T10:00:27 cd fp/
+  265  2025-11-13T10:00:34 ls
+  266  2025-11-13T10:00:42 cd homes01/
+  267  2025-11-13T10:00:44 ls
+  268  2025-11-13T10:00:50 cd u01/
+  269  2025-11-13T10:00:52 ls
+  270  2025-11-13T10:01:07 cd ec-gabijar/
+  271  2025-11-13T10:01:11 ls
+  272  2025-11-13T10:01:19 cd BIOS-IN5410/sbatch_intro/
+  273  2025-11-13T10:02:41 cd /projects/ec34/biosin5410/sbatch_intro/test_script.sh .
+  274  2025-11-13T10:03:06 cp /projects/ec34/biosin5410/sbatch_intro/test_script.sh .
+  275  2025-11-13T10:03:07 ls
+  276  2025-11-13T10:03:39 sbatch test.script.sh
+  277  2025-11-13T10:04:17 ls
+  278  2025-11-13T10:04:52 cd ../
+  279  2025-11-13T10:04:53 ls
+  280  2025-11-13T10:04:58 cd sbatch_intro/
+  281  2025-11-13T10:05:20 mkdir --help
+  282  2025-11-13T10:06:00 rm -r sbatch_intro
+  283  2025-11-13T10:06:05 pwd
+  284  2025-11-13T10:06:09 cd ../
+  285  2025-11-13T10:06:13 rm -r sbatch_intro
+  286  2025-11-13T10:06:14 ls
+  287  2025-11-13T10:06:30 mkdir -p sbatch_intro
+  288  2025-11-13T10:06:31 ls
+  289  2025-11-13T10:06:39 cd sbatch_intro/
+  290  2025-11-13T10:06:40 ls
+  291  2025-11-13T10:06:53 cp /projects/ec34/biosin5410/sbatch_intro/test_script.sh .
+  292  2025-11-13T10:06:54 ls
+  293  2025-11-13T10:07:26 cat slurm-2115417.out 
+  294  2025-11-13T10:08:11 sbatch test.script.sh
+  295  2025-11-13T10:08:23 sbatch test_script.sh
+  296  2025-11-13T10:08:26 ls
+  297  2025-11-13T10:08:38 cd ../
+  298  2025-11-13T10:08:40 ls
+  299  2025-11-13T10:08:44 cd sbatch_intro/
+  300  2025-11-13T10:08:46 ls
+  301  2025-11-13T10:09:23 clear
+  302  2025-11-13T10:09:29 ls
+  303  2025-11-13T10:09:48 rm slurm-2115417.out 
+  304  2025-11-13T10:09:50 ls
+  305  2025-11-13T10:09:58 cat slurm-2115529.out 
+  306  2025-11-13T10:10:24 sbatch test_script.sh
+  307  2025-11-13T10:10:29 ls
+  308  2025-11-13T10:11:12 cat slurm-2115583.out 
+  309  2025-11-13T10:11:27 nano test_script.sh 
+  310  2025-11-13T10:13:58 sbatch test_script.sh
+  311  2025-11-13T10:14:04 LS
+  312  2025-11-13T10:14:06 ls
+  313  2025-11-13T10:14:57 cat slurm-2115676.out 
+  314  2025-11-13T10:15:11 nano test_script.sh 
+  315  2025-11-13T10:16:18 sbatch test_script.sh
+  316  2025-11-13T10:16:42 ls
+  317  2025-11-13T10:17:24 cat slurm-2115733.out 
+  318  2025-11-13T10:18:00 nano test_script.sh
+  319  2025-11-13T10:18:23 sbatch test_script.sh
+  320  2025-11-13T10:18:30 ls
+  321  2025-11-13T10:18:43 rm test_script.shy
+  322  2025-11-13T10:18:44 ls
+  323  2025-11-13T10:18:51 cat slurm-2115777.out 
+  324  2025-11-13T10:21:50 squeue test_script.sh 
+  325  2025-11-13T10:22:51 squeue -u ec-gabijar 
+  326  2025-11-13T10:23:10 sbatch test_script.sh 
+  327  2025-11-13T10:23:28 squeue -u ec-gabijar 
+  328  2025-11-13T10:24:05 ls
+  329  2025-11-13T10:24:22 rm slurm-xxxx*
+  330  2025-11-13T10:24:34 rm slurm*
+  331  2025-11-13T10:24:36 ls
+  332  2025-11-13T10:24:45 cd result/
+  333  2025-11-13T10:24:46 ls
+  334  2025-11-13T10:24:51 cd ../
+  335  2025-11-13T10:24:52 ls
+  336  2025-11-13T10:24:59 rm -r result/
+  337  2025-11-13T10:25:01 ls
+  338  2025-11-13T10:26:57 sbatch some_script.sh example_file1
+  339  2025-11-13T10:27:21 sbatch test_script.sh example_file1
+  340  2025-11-13T10:27:24 ls
+  341  2025-11-13T10:29:27 mkdir arguments
+  342  2025-11-13T10:30:02 cd ../
+  343  2025-11-13T10:30:10 ls
+  344  2025-11-13T10:30:16 cd fasta/
+  345  2025-11-13T10:30:17 ls
+  346  2025-11-13T10:30:28 cd ./
+  347  2025-11-13T10:30:30 ls
+  348  2025-11-13T10:30:34 cd ../
+  349  2025-11-13T10:30:36 ls
+  350  2025-11-13T10:30:48 cd BIOS-IN5410/sbatch_intro/arguments/
+  351  2025-11-13T10:31:28 cp ../../fasta/*.fasta .
+  352  2025-11-13T10:31:34 cp ../fasta/*.fasta .
+  353  2025-11-13T10:31:47 cp ../../../fasta/*.fasta .
+  354  2025-11-13T10:31:50 ls
+  355  2025-11-13T10:32:25 cp ../test_script.sh ./wc_copy.sh
+  356  2025-11-13T10:32:27 ls
+  357  2025-11-13T10:33:27 nano wc_copy.sh 
+  358  2025-11-13T10:39:20 sbatch wc_copy.sh 18SrRNA_Jalview_test.fasta 
+  359  2025-11-13T10:40:01 ls
+  360  2025-11-13T10:40:07 cat slurm-2116307.out 
+  361  2025-11-13T10:40:43 nano wc_copy.sh 
+  362  2025-11-13T10:41:41 sbatch wc_copy.sh 18SrRNA_Jalview_test.fasta 
+  363  2025-11-13T10:41:59 LS
+  364  2025-11-13T10:42:01 ls
+  365  2025-11-13T10:42:30 cat slurm-2116373.out 
+  366  2025-11-13T10:42:59 cd ../
+  367  2025-11-13T10:43:01 ls
+  368  2025-11-13T10:43:05 cat test_script.sh 
+  369  2025-11-13T10:43:13 ls
+  370  2025-11-13T10:43:17 cd arguments/
+  371  2025-11-13T10:43:18 ls
+  372  2025-11-13T10:43:31 cat slurm-2116373.out 
+  373  2025-11-13T10:43:48 cd result/
+  374  2025-11-13T10:43:49 ls
+  375  2025-11-13T10:44:06 cat wc_18SrRNA_Jalview_test.fasta.out 
+  376  2025-11-13T10:46:05 cd ../
+  377  2025-11-13T10:46:17 ls *.fasta
+  378  2025-11-13T10:47:20 for f in $(ls *.fasta);do echo $f;done
+  379  2025-11-13T10:48:17 for f in $(ls *.fasta);do sbatch wc_copy.sh $f;done
+  380  2025-11-13T10:51:00 ct
+  381  2025-11-13T10:51:46 cat slurm*
+  382  2025-11-13T10:52:38 cd ../../
+  383  2025-11-13T10:52:40 ls
+  384  2025-11-13T10:52:55 mkdir -p scripts
+  385  2025-11-13T10:52:56 ls
+  386  2025-11-13T10:53:16 cd scripts/
+  387  2025-11-13T10:53:45 cD ../
+  388  2025-11-13T10:53:50 cd ../
+  389  2025-11-13T10:53:54 ls
+  390  2025-11-13T10:54:26 cd scripts/
+  391  2025-11-13T10:54:29 ls
+  392  2025-11-13T10:55:57 pwd
+  393  2025-11-13T10:57:08 cp /fp/homes01/u01/ec-gabijar/BIOS-IN5410/sbatch_intro/arguments/wc_copy.sh .
+  394  2025-11-13T10:57:09 ls
+  395  2025-11-13T10:57:25 cd ../
+  396  2025-11-13T10:57:26 ls
+  397  2025-11-13T10:57:38 cp sbatch_intro/arguments/
+  398  2025-11-13T10:57:39 ls
+  399  2025-11-13T10:57:47 cd sbatch_intro/arguments/
+  400  2025-11-13T10:57:48 ls
+  401  2025-11-13T10:58:16 for f in $(ls *.fasta);do sbatch ../../scripts/wc_copy.sh $f;done
+  402  2025-11-13T10:58:44 cd ../
+  403  2025-11-13T10:58:51 cd ...../
+  404  2025-11-13T10:59:08 cd ../../
+  405  2025-11-13T10:59:10 ls
+  406  2025-11-13T10:59:14 cd BIOS-IN5410/
+  407  2025-11-13T10:59:22 cd scripts/
+  408  2025-11-13T10:59:28 ls
+  409  2025-11-13T11:00:24 module load git/2.49.0-GCCcore_14.2.0
+  410  2025-11-13T11:00:49 git --version
+  411  2025-11-13T11:00:58 git init
+  412  2025-11-13T11:01:04 git status
+  413  2025-11-13T11:01:22 git add wc_copy.sh 
+  414  2025-11-13T11:01:29 git commit wc_copy.sh 
+  415  2025-11-13T11:02:24 git commit wc_copy.sh -m "Addint the script file"
+  416  2025-11-13T11:02:33 git status
+  417  2025-11-13T11:02:38 git log
+  418  2025-11-13T11:16:22 git remote add https://github.com/GabijaRozenaite-blip/scripts
+  419  2025-11-13T11:16:47 git remote add scripts https://github.com/GabijaRozenaite-blip/scripts
+  420  2025-11-13T11:16:56 ls
+  421  2025-11-13T11:17:19 git status
+  422  2025-11-13T11:17:28 git push 
+  423  2025-11-13T11:18:06 git push --set-upstream scripts main
+  424  2025-11-13T11:20:19 git remote list
+  425  2025-11-13T11:20:58 git fetch origin --all
+  426  2025-11-13T11:21:05 git fetch --all
+  427  2025-11-13T11:21:16 git remotee
+  428  2025-11-13T11:21:18 git remote
+  429  2025-11-13T11:22:08 git pull origin main
+  430  2025-11-13T11:22:18 git pull scripts main
+  431  2025-11-13T11:24:09 ls ~/.ssh
+  432  2025-11-13T11:26:06 module spider git
+  433  2025-11-13T11:26:21 module reset
+  434  2025-11-13T11:26:27 git --version
+  435  2025-11-13T11:27:04 module load git/2.49.0-GCCcore-14.2.0 
+  436  2025-11-13T11:27:11 git --version
+  437  2025-11-13T11:27:24 git pull scripts main
+  438  2025-11-13T11:28:32 git fetch
+  439  2025-11-13T11:28:36 git fetch --all
+  440  2025-11-13T11:28:40 git fetch scripts
+  441  2025-11-13T11:28:48 git pull scripts main
+  442  2025-11-13T11:28:54 git pull scripts
+  443  2025-11-13T11:29:05 git branch
+  444  2025-11-13T11:29:14 git pull --help
+  445  2025-11-13T11:29:40 git pull
+  446  2025-11-13T11:29:48 git pull scripts main
+  447  2025-11-13T11:32:43 git fetch origin
+  448  2025-11-13T11:32:49 git fetch --all
+  449  2025-11-13T11:35:11 git remote -v
+  450  2025-11-13T11:35:59 git push origin main
+  451  2025-11-13T11:36:06 git remote --help
+  452  2025-11-13T11:36:15 git remote remove scripts
+  453  2025-11-13T11:36:18 git remote -v
+  454  2025-11-13T11:36:21 git remotes -vv
+  455  2025-11-13T11:36:25 git remote -v
+  456  2025-11-13T11:38:11 git status
+  457  2025-11-13T11:38:16 git info
+  458  2025-11-13T11:38:21 git log
+  459  2025-11-13T11:38:33 git branch
+  460  2025-11-13T11:38:38 git branch -M main
+  461  2025-11-13T11:38:41 git branch
+  462  2025-11-13T11:38:48 git remote add origin git@github.com:GabijaRozenaite-blip/scripts.git
+  463  2025-11-13T11:38:54 git push -u origin
+  464  2025-11-13T11:39:09 git push --set-upstream origin main
+  465  2025-11-13T11:39:16 git log
+  466  2025-11-13T11:40:04 clear
+  467  2025-11-13T11:42:39 git add
+  468  2025-11-13T11:42:47 git add .
+  469  2025-11-13T11:42:53 git commit
+  470  2025-11-13T11:46:06 history > 11_13_First_part.txt
+  471  2025-11-13T11:46:07 ls
+  472  2025-11-13T11:46:14 cat 11_13_First_part.txt 
+  473  2025-11-13T11:46:59 pwd
+  474  2025-11-13T11:47:09 cp 11_13_First_part.txt ..
+  475  2025-11-13T11:47:13 cd ../
+  476  2025-11-13T11:47:15 ls
+  477  2025-11-13T11:47:34 cd scripts/
+  478  2025-11-13T11:47:36 ls
+  479  2025-11-13T11:47:44 git add 11_13_First_part.txt 
+  480  2025-11-13T11:48:19 git commit -m "Adding history"
+  481  2025-11-13T11:48:23 git log
+  482  2025-11-13T11:48:45 git push -u origin
+  483  2025-11-13T11:49:15 rm 11_13_First_part.txt 
+  484  2025-11-13T11:49:18 git add 
+  485  2025-11-13T11:49:22 ls
+  486  2025-11-13T11:49:55 module avail
+  487  2025-11-13T11:50:12 module list
+  488  2025-11-13T11:51:47 module avail bcftools
+  489  2025-11-13T11:52:24 module help BCFtools/1.17-GCC-12.2.0 
+  490  2025-11-13T11:54:35 module load BCFtools/1.17-GCC-12.2.0 
+  491  2025-11-13T11:54:43 module list
+  492  2025-11-13T11:55:07 module load BIOS-IN5410/HT-2023 
+  493  2025-11-13T11:55:21 module list
+  494  2025-11-13T13:02:53 pwd
+  495  2025-11-13T13:03:05 cd BIOS-IN5410/scripts/
+  496  2025-11-13T13:03:10 ls -a
+  497  2025-11-13T13:03:17 module list
+  498  2025-11-13T13:03:43 module load git/2.49.0-GCCcore-14.2.0 
+  499  2025-11-13T13:03:50 git --version
+  500  2025-11-13T13:03:55 module list
+  501  2025-11-13T13:04:23 module load BIOS-IN5410/HT-2023 
+  502  2025-11-13T13:04:35 module list
+  503  2025-11-13T13:08:59 pwd
+  504  2025-11-13T13:09:02 cd ../
+  505  2025-11-13T13:09:04 ls
+  506  2025-11-13T13:09:18 rm 11_13_First_part.txt 
+  507  2025-11-13T13:09:19 øs
+  508  2025-11-13T13:09:21 ls
+  509  2025-11-13T13:09:41 mkdir walrus_SNP_calling
+  510  2025-11-13T13:09:44 cd walrus_SNP_calling/
+  511  2025-11-13T13:09:46 pwd
+  512  2025-11-13T13:10:48 cp /projects/ec34/biosin5410/sbatch_intro/SNP_calling/BAM_files/* . 
+  513  2025-11-13T13:10:50 LS
+  514  2025-11-13T13:10:52 ls
+  515  2025-11-13T13:11:07 cp /projects/ec34/biosin5410/sbatch_intro/SNP_calling/reference/* . 
+  516  2025-11-13T13:11:10 ls
+  517  2025-11-13T13:11:16 ls -1
+  518  2025-11-13T13:13:05 cd ../
+  519  2025-11-13T13:13:06 ls
+  520  2025-11-13T13:13:13 cd sbatch_intro/result/
+  521  2025-11-13T13:13:15 ls
+  522  2025-11-13T13:13:29 cd ../../
+  523  2025-11-13T13:13:32 ls walrus_SNP_calling/
+  524  2025-11-13T13:13:41 cd walrus_SNP_calling/
+  525  2025-11-13T13:14:05 ls -1
+  526  2025-11-13T13:14:12 ls -l
+  527  2025-11-13T13:15:04 ls -a
+  528  2025-11-13T13:15:36 ls --help
+  529  2025-11-13T13:16:48 ls -h
+  530  2025-11-13T13:17:00 ls -hal
+  531  2025-11-13T13:17:34 ls -l
+  532  2025-11-13T13:17:42 ls -1
+  533  2025-11-13T13:17:45 ls -2
+  534  2025-11-13T13:17:49 ls -b
+  535  2025-11-13T13:17:54 ls -hal
+  536  2025-11-13T13:18:08 ls -hal *.ba,
+  537  2025-11-13T13:18:11 ls -hal *.bam
+  538  2025-11-13T13:19:24 ls -hal *.bam | sort 5
+  539* 2025-11-13T13:19:38 sort --helph
+  540  2025-11-13T13:20:47 ls -hal *.bam | sort -h
+  541  2025-11-13T13:22:23 ls -hal *.bam | -lS
+  542  2025-11-13T13:22:32 ls -hal *.bam | sort -lS
+  543  2025-11-13T13:22:36 ls -hal *.bam | sort -S
+  544  2025-11-13T13:22:40 ls -hal *.bam | sort -s
+  545  2025-11-13T13:22:50 ls -hal *.bam | sort 
+  546  2025-11-13T13:23:48 cd ../
+  547  2025-11-13T13:23:59 cd walrus_SNP_calling/
+  548  2025-11-13T13:24:08 cd ../scripts/
+  549  2025-11-13T13:24:26 ls
+  550  2025-11-13T13:24:42 cp wc_copy.sh Haplo_calling.sh
+  551  2025-11-13T13:24:51 nano Haplo_calling.sh 
+  552  2025-11-13T13:34:28 cat Haplo_calling.sh 
+  553  2025-11-13T13:38:02 sbatch ../scripts/Haplo_calling.sh WLR008.Wal_mt.realigned.bam
+  554  2025-11-13T13:38:09 ls
+  555  2025-11-13T13:38:53 pwd
+  556  2025-11-13T13:38:59 cd ../
+  557  2025-11-13T13:39:06 cd walrus_SNP_calling/
+  558  2025-11-13T13:39:13 sbatch ../scripts/Haplo_calling.sh WLR008.Wal_mt.realigned.bam
+  559  2025-11-13T13:39:57 squeue -u ec-gabijar
+  560  2025-11-13T13:40:03 ls
+  561  2025-11-13T13:40:41 ls -a
+  562  2025-11-13T13:42:09 squeue -u ec-gabijar
+  563* 2025-11-13T13:42:30 
+  564  2025-11-13T13:45:27 squeue -u ec-gabijar
+  565  2025-11-13T13:45:29 LS
+  566  2025-11-13T13:45:30 ls
+  567  2025-11-13T13:46:43 squeue -u ec-gabijar 
+  568  2025-11-13T13:46:55 ls -a
+  569  2025-11-13T13:47:05 pwd
+  570  2025-11-13T13:47:21 cd ../
+  571  2025-11-13T13:47:24 ls
+  572* 2025-11-13T13:47:37 git push 
+  573  2025-11-13T13:47:51 cd scripts/
+  574  2025-11-13T13:48:23 git push -u origin
+  575  2025-11-13T13:48:48 git add Haplo_calling.sh 
+  576  2025-11-13T13:49:12 git commit -m "adding haplo script" 
+  577  2025-11-13T13:49:16 git push -u origin
+  578  2025-11-13T13:49:34 squeue -u ec-gabijar 
+  579  2025-11-13T13:52:45 module spider git
+  580  2025-11-13T13:58:50 squeue -u ec-gabijar 
+  581  2025-11-13T13:58:57 cd ../
+  582  2025-11-13T13:59:05 cd walrus_SNP_calling/
+  583  2025-11-13T13:59:08 ls -a
+  584  2025-11-13T14:00:05 cd ../
+  585  2025-11-13T14:00:14 cd../
+  586  2025-11-13T14:00:18 cd ../
+  587  2025-11-13T14:00:28 ls
+  588  2025-11-13T14:00:36 cd fp
+  589  2025-11-13T14:00:37 ls
+  590  2025-11-13T14:00:42 cd homes01/
+  591  2025-11-13T14:00:43 ls
+  592  2025-11-13T14:00:50 cd u01/
+  593  2025-11-13T14:00:51 ls
+  594  2025-11-13T14:01:00 cd ec-klarav
+  595  2025-11-13T14:01:14 cd ec-gabijar/
+  596  2025-11-13T14:01:18 ls
+  597  2025-11-13T14:01:29 mv fasta BIOS-IN5410/
+  598  2025-11-13T14:01:32 ls
+  599  2025-11-13T14:01:40 cd BIOS-IN5410/
+  600  2025-11-13T14:01:43 ls
+  601  2025-11-13T14:02:22 squeue -u ec-gabijar 
+  602  2025-11-13T14:02:31 cd walrus_SNP_calling/
+  603  2025-11-13T14:02:32 ls
+  604  2025-11-13T14:05:31 squeue -u ec-gabijar 
+  605  2025-11-13T14:05:43 squeue --help
+  606* 2025-11-13T14:07:10 squeue -
+  607  2025-11-13T14:07:19 squeue -u ec-gabijar -o
+  608  2025-11-13T14:07:26 squeue -o ec-gabijar 
+  609  2025-11-13T14:07:37 squeue -u ec-gabijar
+  610  2025-11-13T14:08:00 ls
+  611  2025-11-13T14:08:46 cd ../scripts/
+  612  2025-11-13T14:08:48 ls
+  613  2025-11-13T14:09:00 history > history.txt
