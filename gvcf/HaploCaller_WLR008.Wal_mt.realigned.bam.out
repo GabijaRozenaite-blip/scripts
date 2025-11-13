@@ -1,0 +1,33 @@
+Using GATK jar /cluster/software/EL9/easybuild/software/GATK/4.3.0.0-GCCcore-11.3.0-Java-11/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /cluster/software/EL9/easybuild/software/GATK/4.3.0.0-GCCcore-11.3.0-Java-11/gatk-package-4.3.0.0-local.jar HaplotypeCaller -R Orosv1mt.fasta -I WLR008.Wal_mt.realigned.bam --ploidy 1 -O gvcf/WLR008.Wal_mt.realigned.bam.gvcf.gz -ERC GVCF
+14:16:18.286 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/cluster/software/EL9/easybuild/software/GATK/4.3.0.0-GCCcore-11.3.0-Java-11/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+14:16:18.700 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:18.701 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.3.0.0
+14:16:18.701 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:16:18.701 INFO  HaplotypeCaller - Executing as ec-gabijar@c1-28.fox on Linux v5.14.0-570.37.1.el9_6.x86_64 amd64
+14:16:18.701 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v11.0.18+10
+14:16:18.701 INFO  HaplotypeCaller - Start Date/Time: November 13, 2025 at 2:16:18 PM CET
+14:16:18.701 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:18.702 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:18.702 INFO  HaplotypeCaller - HTSJDK Version: 3.0.1
+14:16:18.702 INFO  HaplotypeCaller - Picard Version: 2.27.5
+14:16:18.702 INFO  HaplotypeCaller - Built for Spark Version: 2.4.5
+14:16:18.703 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:16:18.703 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:16:18.703 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:16:18.703 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:16:18.703 INFO  HaplotypeCaller - Deflater: IntelDeflater
+14:16:18.704 INFO  HaplotypeCaller - Inflater: IntelInflater
+14:16:18.704 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+14:16:18.704 INFO  HaplotypeCaller - Requester pays: disabled
+14:16:18.704 INFO  HaplotypeCaller - Initializing engine
+14:16:18.705 INFO  HaplotypeCaller - Shutting down engine
+[November 13, 2025 at 2:16:18 PM CET] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2076049408
+***********************************************************************
+
+A USER ERROR has occurred: The specified fasta file (file:///fp/homes01/u01/ec-gabijar/BIOS-IN5410/scripts/Orosv1mt.fasta) does not exist.
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
