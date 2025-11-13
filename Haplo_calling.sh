@@ -21,13 +21,15 @@ module --quiet purge 		#this resets the module environment, always good to start
 FILENAME=$1
 ##make new dir called gvcf
 module load BIOS-IN5410/HT-2023
-mkdir - p $SUBMITDIR/gvcf
+
+mkdir -p $SUBMITDIR/gvcf
+
 ## run halpotype caller
 gatk HaplotypeCaller -R Orosv1mt.fasta \
 -I $FILENAME --ploidy 1 -O gvcf/$FILENAME.gvcf.gz -ERC GVCF \
 2> gvcf/HaploCaller_$FILENAME.out
 
-echo '$FILEMA HaplotypeCalled'
+echo '$FILENAME HaplotypeCalled'
 ## message that the job is done
 echo "Finished running jobs"
 
